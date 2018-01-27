@@ -1,2 +1,2 @@
 # senior-project
-Android App for senior project
+Web app for senior project
