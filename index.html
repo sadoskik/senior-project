@@ -5,44 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <link href="script.js">
-    <link href="info.txt" id="csvFileInput">
+    <link rel="icon" href="http://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-26/76152d7d70bdb7e0082e520cad58e514.ico">
+    <script src="script.js"></script>
   </head>
+
   <body>
-    <h1>Before or After?</h1>
-    <p id="test" src="script.js"></p>
-    <p>2018</p>
+    <h1>Did the Event Occur Before or After the Given Year?</h1>
+    <p id="event"></p>
     <button class="button" onclick="beforeFunction()">Before</button>
     <button class="button" onclick="afterFunction()">After</button>
+    <br>
+    <br>
+    <p id="randyear"></p>
+    <br>
+    <h2 id="result"></h2>
+    <h3 id="correctyear"></h3>
 
-    // button functions
+    <script>
+      function pickRandom() {
+      return Math.floor((Math.random() * (facts.length - 1)));
+      }
+      var event = facts[pickRandom()];
+        document.getElementById("event").innerHTML = event.event;
+      var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
+        document.getElementById("randyear").innerHTML = rYear;
+    </script>
 
     <script>
       function beforeFunction() {
-        if (year <) { ;
-          } else { ;
-            }
+        if (rYear > event.year) { pickRandom();
+          document.getElementById("result").innerHTML = "Correct!";
+            } else { document.getElementById("result").innerHTML = "Incorrect!";
+              }
       }
-    </script>
-    <script>
       function afterFunction() {
-        if (year >) { ;
-          } else{ ;
-            }
-      }
-    </script>
-
-    // array functions
-
-    <script>
-      document.getElementById("test").src = "script.js";
-    </script>
-    <script>
-      function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-        }
+        if (rYear < event.year) { pickRandom();
+          document.getElementById("result").innerHTML = "Correct!";
+            } else { document.getElementById("result").innerHTML = "Incorrect!";
+              document.getElementById("correctyear").innerHTML = event.year;
+              }
       }
     </script>
   </body>
