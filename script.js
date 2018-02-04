@@ -1,6 +1,6 @@
 var facts = [
-  {year:"1066", event:"The Battle of Hastings."},
-  {year:"1206", event:"Genghis Khan becomes the sole ruler of the Mongol plains."},
+  {year:1066, event:"The Battle of Hastings."},
+  {year:1206, event:"Genghis Khan becomes the sole ruler of the Mongol plains."},
   {year:1254, event:"Marco Polo is born in Venice, Italy."},
   {year:1415, event:"The Battle of Agincourt."},
   {year:1431, event:"Joan of Arc is executed by burning."},
