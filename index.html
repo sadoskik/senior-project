@@ -36,13 +36,15 @@
       function beforeFunction() {
         if (rYear > parseInt(event.year)) { 
           document.getElementById("result").innerHTML = "Correct!";
-            } else { document.getElementById("result").innerHTML = "1Incorrect!";
+            } 
+        else { document.getElementById("result").innerHTML = "1Incorrect!";
               }
       }
       function afterFunction() {
         if (rYear < parseInt(event.year)) { 
           document.getElementById("result").innerHTML = "Correct!";
-            } else { document.getElementById("result").innerHTML = "2Incorrect!";
+            }
+        else { document.getElementById("result").innerHTML = "2Incorrect!";
               
               }
       }
