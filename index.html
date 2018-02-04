@@ -20,7 +20,7 @@
     <br>
     <h2 id="result"></h2>
     <h3 id="correctyear"></h3>
-    <h4> Version 1.0 </h3>
+    <h4> Version 1.1 </h3>
 
     <script>
       function pickRandom() {
@@ -31,9 +31,7 @@
       var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
         document.getElementById("randyear").innerHTML = rYear;
       
-    </script>
-
-    <script>
+   
       function beforeFunction() {document.getElementById("correctyear").innerHTML = event.year;
         //document.getElementById("correctyear").innerHTML = event.year;
         if (rYear > event.year) { 
