@@ -33,17 +33,17 @@
 
     <script>
       function beforeFunction() {
-        if (rYear > event.year) { pickRandom();
+        if (rYear > event.year) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "Incorrect!";
-              }
+              }pickRandom();
       }
       function afterFunction() {
-        if (rYear < event.year) { pickRandom();
+        if (rYear < event.year) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "Incorrect!";
               document.getElementById("correctyear").innerHTML = event.year;
-              }
+              }pickRandom();
       }
     </script>
   </body>
