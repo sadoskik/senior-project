@@ -20,13 +20,13 @@
     <br>
     <h2 id="result"></h2>
     <h3 id="correctyear"></h3>
-    <h4> Version 1.3 </h3>
+    <h4> Version 1.4 </h3>
 
     <script>
       function pickRandom() {
       return Math.floor((Math.random() * (facts.length - 1)));
       }
-      var event = facts[pickRandom()];
+      var event = facts[/*pickRandom()*/0];
         document.getElementById("event").innerHTML = event.event;
       var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
         document.getElementById("randyear").innerHTML = rYear;
