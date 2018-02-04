@@ -29,18 +29,19 @@
         document.getElementById("event").innerHTML = event.event;
       var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
         document.getElementById("randyear").innerHTML = rYear;
+      document.getElementById("correctyear").innerHTML = event.year;
     </script>
 
     <script>
       function beforeFunction() {
-        document.getElementById("correctyear").innerHTML = event.year;
+        //document.getElementById("correctyear").innerHTML = event.year;
         if (rYear > event.year) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "Incorrect!";
               }
       }
       function afterFunction() {
-        document.getElementById("correctyear").innerHTML = event.year;
+       // document.getElementById("correctyear").innerHTML = event.year;
         if (rYear < event.year) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "Incorrect!";
