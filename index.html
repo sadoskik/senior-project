@@ -34,13 +34,13 @@
       
    
       function beforeFunction() {
-        if (rYear > event.year) { 
+        if (rYear > parseInt(event.year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "1Incorrect!";
               }
       }
       function afterFunction() {
-        if (rYear < event.year) { 
+        if (rYear < parseInt(event.year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             } else { document.getElementById("result").innerHTML = "2Incorrect!";
               
