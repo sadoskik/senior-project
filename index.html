@@ -26,25 +26,25 @@
       function pickRandom() {
       return Math.floor((Math.random() * (facts.length - 1)));
       }
-      var event = facts[/*pickRandom()*/0];
-        document.getElementById("event").innerHTML = event.event;
+      var which = pickRandom();
+        document.getElementById("event").innerHTML = facts[which].event;
       var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
         document.getElementById("randyear").innerHTML = rYear;
-      document.getElementById("correctyear").innerHTML = event.year;
+      document.getElementById("correctyear").innerHTML = facts[which].year;
       
    
       function beforeFunction() {
-        if (Number(rYear) > Number(event.year)) { 
+        if (Number(rYear) > Number(facts[which].year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             } 
-        else { document.getElementById("result").innerHTML = "rYear = "+ rYear + " and event.year = " + event.year;
+        else { document.getElementById("result").innerHTML = "rYear = "+ rYear + " and event.year = " + facts[which].year;
               }
       }
       function afterFunction() {
-        if (Number(rYear) < Number(event.year)) { 
+        if (Number(rYear) < Number(facts[which].year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             }
-        else { //document.getElementById("result").innerHTML = "2Incorrect!";
+        else { document.getElementById("result").innerHTML = "2Incorrect!";
               
               }
       }
