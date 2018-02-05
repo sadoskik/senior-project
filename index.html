@@ -30,21 +30,23 @@
         document.getElementById("event").innerHTML = facts[which].event;
       var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
         document.getElementById("randyear").innerHTML = rYear;
-      document.getElementById("correctyear").innerHTML = facts[which].year;
+      
       
    
       function beforeFunction() {
+        document.getElementById("correctyear").innerHTML = facts[which].year;
         if (Number(rYear) > Number(facts[which].year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             } 
-        else { document.getElementById("result").innerHTML = "rYear = "+ rYear + " and event.year = " + facts[which].year;
+        else { document.getElementById("result").innerHTML = "Incorrect!" ;
               }
       }
       function afterFunction() {
+        document.getElementById("correctyear").innerHTML = facts[which].year;
         if (Number(rYear) < Number(facts[which].year)) { 
           document.getElementById("result").innerHTML = "Correct!";
             }
-        else { document.getElementById("result").innerHTML = "2Incorrect!";
+        else { document.getElementById("result").innerHTML = "Incorrect!";
               
               }
       }
