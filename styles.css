@@ -3,25 +3,25 @@
 }
 
 h1 {
-  color: #008080;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 
 p {
-  color: #008080;
+  color: #FFFFFF;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 150%;
 }
 
 h2 {
-  color: rgb(184, 77, 77);
+  color: rgb(255, 0, 0);
   font-family: "Trebuchet MS", Helvetica, sans-serif;;
   font-size: 150%;
 }
 
 h3 {
-  color: rgb(184, 77, 77);
+  color: rgb(0, 255, 255);
   font-family: "Trebuchet MS", Helvetica, sans-serif;;
   font-size: 150%;
 }
