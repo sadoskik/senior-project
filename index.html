@@ -26,14 +26,14 @@
     </form>
 	
 	  
-    <button class="button" onclick="verify()">After</button>
+    <button class="button" onclick="verify()">Check!</button>
     <br>
     <br>
-    <p id="randyear"></p>
+    <p ></p>
     <br>
-    <h2 id="result"></h2>
-    <h3 id="correctyear"></h3>
-    <h4> Version 1.8 </h3>
+    <h2 ></h2>
+    <h3 id="result"></h3>
+    <h4> Version 2.1 </h3>
     <div style = "position: fixed;		  
     	right: 0px;
    	 top: 0px;
@@ -50,8 +50,8 @@
       document.getElementById("event").innerHTML = facts[which].event;
       function verify(){
 	      var x = document.getElementById("form");
-	      if(x.elements[0].value == facts[which].year) return "Correct!";
-	      else return "False!";
+	      if(x.elements[0].value == facts[which].year) document.getElementById("result").innerHTML = "Correct!";
+	      else document.getElementById("result").innerHTML = "False!";
       }
       
       
