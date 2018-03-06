@@ -24,7 +24,7 @@
     
 		  
     <form id="form">
-	    <p style="color: orange">Answer goes here!</p>
+	    <p style="color: light-red">Answer goes here!</p>
 	    <input type="text" name="answer">
 	    </input>
     </form>
@@ -57,7 +57,8 @@
 		      document.getElementById("result").innerHTML = "Correct!";
 		      which = which + 1;}
 	      else{ document.getElementById("result").innerHTML = "False!";
-		   which = 0;}
+		   which = 0;
+		   }
 	      if(which == facts.length) document.getElementById("result").innerHTML = 
 		      "Congratulations! You have won the game! Don't reset your browser";
 	      else{set();
