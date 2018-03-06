@@ -56,7 +56,8 @@
 	      if(x.elements[0].value == facts[which].year){ 
 		      document.getElementById("result").innerHTML = "Correct!";
 		      which = which + 1;}
-	      else document.getElementById("result").innerHTML = "False!";
+	      else{ document.getElementById("result").innerHTML = "False!";
+		   which = 0;}
 	      set();
 	      x.elements[0].value = "";
 	      
