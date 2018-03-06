@@ -29,28 +29,9 @@ h3 {
 div {
     position: fixed;
     top: 0;
-    right: 450px;
-    width: 300px;
+    right: 450;
+    width: 300;
     border: 3px solid #73AD21;   
 }
 
-.button {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #92809F;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
 
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
