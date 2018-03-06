@@ -19,14 +19,14 @@
   <body>
     <h1>Can you answer this book-related question?</h1>
     <p id="event"></p>
-    <form>
+    <form id="form">
 	    <p>Answer goes here!</p>
 	    <input type="text" name="answer">
 	    </input>
     </form>
 	
 	  
-    <button class="button" onclick="afterFunction()">After</button>
+    <button class="button" onclick="verify()">After</button>
     <br>
     <br>
     <p id="randyear"></p>
@@ -47,29 +47,18 @@
       return Math.floor((Math.random() * (facts.length - 1)));
       }
       var which = pickRandom();
-        document.getElementById("event").innerHTML = facts[which].event;
-      var rYear = Math.floor((Math.random() * (2000 - 1000) + 1000));
-        document.getElementById("randyear").innerHTML = rYear;
+      document.getElementById("event").innerHTML = facts[which].event;
+      function verify(){
+	      var x = document.getElementById("form");
+	      if(x.elements[0].value == facts[which].year) return "Correct!";
+	      else return "False!";
+      }
+      
       
       
    
-      function beforeFunction() {
-        document.getElementById("correctyear").innerHTML = facts[which].year;
-        if (Number(rYear) > Number(facts[which].year)) { 
-          document.getElementById("result").innerHTML = "Correct!";
-            } 
-        else { document.getElementById("result").innerHTML = "Incorrect!" ;
-              }
-      }
-      function afterFunction() {
-        document.getElementById("correctyear").innerHTML = facts[which].year;
-        if (Number(rYear) < Number(facts[which].year)) { 
-          document.getElementById("result").innerHTML = "Correct!";
-            }
-        else { document.getElementById("result").innerHTML = "Incorrect!";
-              
-              }
-      }
+      
+      
     </script>
   </body>
 </html>
